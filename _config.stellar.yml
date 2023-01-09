@@ -1,0 +1,346 @@
+######## Stellar info ########
+# stellar:
+  # version: '1.0.1'
+  # homepage: 'https://xaoxuu.com/wiki/stellar/'
+  # repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
+  # cdn_css: # Use cdn links instead of /css/main.css
+  # cdn_js: # Use cdn links instead of /js/main.js
+
+
+# ######## head tags ########
+# open_graph:
+#   enable: true
+#   twitter_id: # for open_graph meta
+
+######## font ########
+style:
+  darkmode: auto # auto / always / false
+  smooth_scroll: true # true / false
+
+  font-size:
+    root: 16px
+    body: .9375rem # 15px
+    code: 85% # 14px
+    codeblock: 0.8125rem # 13px
+  
+  font-family:
+    logo: "LXGW WenKai Screen"
+    body: "LXGW WenKai Lite"
+    code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+    codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+  
+  text-align: justify # justify/left/center/right
+  
+  border-radius:
+    card: 12px # 卡片圆角
+    block: 12px # 块圆角
+    bar: 6px # 导航栏圆角
+    image: 6px # 图片圆角
+
+  color:
+    # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
+    background: 'hsl(212 16% 98%)' # 浅色背景颜色
+    block: 'hsl(212 8% 95%)' # 块背景颜色
+    code: 'hsl(14 100% 48%)' # 行内代码颜色
+    text: 'hsl(0 0% 20%)' # 文本颜色
+    # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
+    theme: 'hsl(192 98% 55%)' # 主题色
+    accent: 'hsl(14 100% 57%)' # 强调色
+    link: 'hsl(207 90% 54%)' # 超链接颜色
+    button: 'hsl(192 98% 55%)' # 按钮颜色
+    hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
+  
+  animated_avatar:
+    animate: auto # auto, always
+    background: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp
+  
+  codeblock:
+    scrollbar: 4px
+    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css
+  
+  loading:
+    loading: 正在加载
+    error: 加载失败，请稍后重试。
+  
+  gradient: # https://webgradients.com/
+    start: 'linear-gradient(to right, hsl(215, 95%, 64%), hsl(195, 95%, 60%), hsl(165, 95%, 56%), hsl(165, 95%, 56%), hsl(195 95% 60%), hsl(215, 95%, 64%))'
+    search: 'linear-gradient(to right, #04F3FF, #08FFC6, #DDF730, #FFBD19, #FF1FE0, #C418FF, #04F3FF)'
+
+
+
+######## Sidebar ########
+sidebar:
+  logo:
+    avatar: '[config.avatar](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+    title: '[config.title](/about/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
+  menu:
+    home: '[主页](/)'    
+    wiki: '[专栏](/wiki/)'    
+    summary: '[总结](/summary/)'
+    about: '[关于](/about/)'  
+
+#   # Sidebar widgets
+#   widgets:
+#     #### 自动生成的页面 ####
+#     # 主页
+#     home: search, welcome, recent, timeline # for home
+#     # 博客索引页
+#     blog_index: search_blog, recent, tagcloud, timeline # for categories/tags/archives
+#     # 文档索引页
+#     wiki_index: search_docs, recent, timeline # for wiki
+#     # 其它（404）
+#     others: search, welcome, recent, timeline # for 404 and ...
+#     #### 手动创建的页面 ####
+#     # 文章内页
+#     post: search_blog, toc, recent, tagcloud, timeline # for pages using 'layout:post'
+#     # 文档内页
+#     wiki: search_docs, toc, related, timeline # for pages using 'layout:wiki'
+#     # 其它 layout:page 的页面
+#     page: welcome, toc, tagcloud, search # for custom pages using 'layout:page'
+
+# ######## Index ########
+# post-index: # 近期发布 分类 标签 归档 and ...
+#   '写给年轻的自己': /write_to_myself/index.html
+#   '常用链接': /links/index.html
+#   '朋友圈动态': /friends/index.html
+
+######## Main ########
+# breadcrumb:
+#   home: home # config.title / config.author / home or custom content
+
+# ######## Article ########
+# article:
+#   category_color:
+#     '新闻稿': '#DA0F47'
+#     '设计开发': '#03a9f4'
+#     '碎碎念': '#009688'
+#     '解决方案': '#ff9800'
+#     '技术加油站': '#4caf50'
+#     '开源库': '#4caf50'
+#     '博客主题': '#ffa000'
+#     '应用程序': '#e91e63'
+#     '实用脚本': '#009688'
+#   auto_cover: false
+#   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
+#   auto_excerpt: excerpt
+#   # 文章许可协议
+#   license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+#   # 分享
+#   share: [wechat, weibo, email, link]
+
+#   # 相关文章，需要安装插件 (for layout: post)
+#   related_posts:
+#     enable: true
+#     title: 您可能感兴趣的文章
+#     max_count: 5
+
+
+# wiki_dir: wiki
+# search:
+#   service: local_search # local_search, todo...
+#   local_search: # 在 front-matter 中设置 indexing:false 来避免被搜索索引
+#     field: all # post, page, all
+#     path: /search.json # 搜索文件存放位置
+#     content: true # 是否搜索内容
+
+
+######## Comments ########
+# comments:
+#   service: waline
+#   waline:
+#     js: https://unpkg.com/@waline/client@v2/dist/waline.js
+#     css: https://unpkg.com/@waline/client@v2/dist/waline.css
+
+#     # Waline server address url, you should set this to your own link
+#     serverURL: https://api.ruizhe.tech
+
+#     # If false, comment count will only be displayed in post page, not in home page
+#     commentCount: true
+
+#     # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+#     pageview: false
+    
+#     # Custom locales
+#     locale:
+#       placeholder: | 
+#         快来参与讨论吧！
+#         可匿名评论（即呢称、邮箱、网址都不填）
+#         若填写邮箱，可在被回复时收到邮件提醒
+#         若不方便在此留言，可发邮件至博主邮箱 1900011042@pku.edu.cn 私聊
+
+#     reaction: true
+
+#     # Custom emoji
+#     emoji: 
+#       - https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs
+#     copyright: false
+
+######## Footer ########
+footer:
+  social:
+    github:
+      icon: '<img src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/>'
+      url: https://github.com/Ruizhe0723
+    link:
+      icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/8411ed322ced6.svg"/>'
+      url: http://ruizhe.tech
+    email:
+      icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/a1b00e20f425d.svg"/>'
+      url: /tricks/mail.html
+    comments:
+      icon: '<img src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/942ebbf1a4b91.svg"/>'
+      url: /about/#comment
+      
+  # sitemap:
+  #   '博客':
+  #     - '[近期](/)'
+  #     - '[分类](/categories/)'
+  #     - '[标签](/tags/)'
+  #     - '[归档](/archives/)'
+  #   '专栏':
+  #     - '[拾记|年度总结](/summary/)'
+  #     - '[面向科研的学习方法](/wiki/method/)'
+  #   '链接':
+  #     - '[朋友圈动态](/friends/)'
+  #     - '[常用链接](/links/)'
+  #   '更多':
+  #     - '[关于本站](/)'
+  #     - '[留言板](/about/)'
+  #     - '[GitHub](https://github.com/Ruizhe0723)'
+  # content: | # 支持 Markdown 格式
+  #   There is only one true heroism in the world: to see the world as it is, and to love it.
+  #   世界上只有一种真正的英雄主义，那就是在认清生活的真相后依然热爱生活。
+
+
+# ######## Tag Plugins ########
+# tag_plugins:
+#   # {% ablock %} / {% note %}
+#   note:
+#     default_color: '' # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
+#     border: true # true / false
+#   # {% checkbox %}
+#   checkbox:
+#     interactive: false # enable interactive for user
+#   # {% quot %}
+#   quot:
+#     default: # 可以自行配置多种图标方案
+#       prefix: https://bu.dusays.com/2022/10/24/63567d3e092ff.png
+#       suffix: https://bu.dusays.com/2022/10/24/63567d3e0ab55.png
+#     hashtag:
+#       prefix: https://bu.dusays.com/2022/10/24/63567d3e07da3.png
+#   # {% emoji %}
+#   emoji:
+#     default: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/${name}.gif
+#     twemoji: https://gcore.jsdelivr.net/gh/twitter/twemoji/assets/svg/${name}.svg
+#     qq: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/${name}.gif
+#     aru: https://gcore.jsdelivr.net/gh/cdn-x/emoji/aru-l/${name}.gif
+#     tieba: https://gcore.jsdelivr.net/gh/cdn-x/emoji/tieba/${name}.png
+#     blobcat: https://jsd.cdn.zzko.cn/gh/norevi/waline-blobcatemojis@1.0/blobs/${name}.png
+#   # {% image %}
+#   image:
+#     fancybox: true # true, false
+#   # {% timeline %}
+#   timeline:
+#     max-height: 200vh
+#   # {% mark %}
+#   mark:
+#     default_color: dark # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
+#   # {% tag %}
+#   tag:
+#     default_color: yellow # red, orange, yellow, green, cyan, blue, purple
+
+
+# ######## JS Plugins ########
+# plugins:
+#   ## required plugins ##
+#   # jquery
+#   jquery: https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js
+
+#   # stellar api
+#   stellar:
+#     sites: /js/plugins/sites.js
+#     friends: /js/plugins/friends.js
+#     ghinfo: /js/plugins/ghinfo.js
+#     timeline: /js/plugins/timeline.js
+#     linkcard: /js/plugins/linkcard.js
+#     fcircle: /js/plugins/fcircle.js
+#     weibo: /js/plugins/weibo.js
+
+#   marked: https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js
+  
+#   ## optional plugins ##
+#   # preload
+#   preload:
+#     enable: true
+#     service: flying_pages # instant_page, flying_pages
+#     instant_page: https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
+#     flying_pages: https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
+
+#   # image lazyload
+#   # https://www.npmjs.com/package/vanilla-lazyload
+#   lazyload:
+#     enable: true # [hexo clean && hexo s] is required after changing this value.
+#     js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
+#     transition: blur # blur, fade
+
+# # 默认关闭，此效果会和图片懒加载插件冲突，导致部分卡片可能加载不出来
+#   scrollreveal:
+#     enable: false
+#     js: https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
+#     distance: 4px # 执行距离
+#     duration: 400 # ms # 执行时长
+#     interval: 100 # ms # 执行间隔（时间）
+#     scale: 0.1 # 0.1~1 # 执行方式（缩放）
+
+#   # https://fancyapps.com/docs/ui/fancybox/
+#   # available for {% image xxx %}
+#   fancybox:
+#     enable: true
+#     js: https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
+#     css: https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css
+#     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
+#     # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
+#     # 使用waline评论可以写: #waline_container .vcontent img
+#     selector: .swiper-slide img # 多个选择器用英文逗号隔开
+
+#   # # swiper
+#   # swiper:
+#   #   enable: true
+#   #   css: https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css
+#   #   js: https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js
+
+
+#   # 赫蹏 (Heti) - 专为中文网页内容设计的排版样式增强
+#   # https://github.com/sivan/heti
+#   heti:
+#     enable: false # 此插件会和代码块冲突，仅适用于纯中文博主。
+#     css: https://unpkg.com/heti@0.9.2/umd/heti.min.css
+#     js: https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js
+
+#   # MathJax
+#   # 需在Markdown文件开头加入mathjax: true
+#   # 推荐使用Pandoc: npm uninstall hexo-renderer-marked --save & npm install hexo-renderer-pandoc --save
+#   mathjax:
+#     enable: false
+#     cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+#   # Katex - The fastest math typesetting library for the web
+#   # https://katex.org/docs/autorender.html
+#   # https://github.com/KaTeX/KaTeX
+#   # 使用 hexo-renderer-markdown-it-plus 作为公式渲染器：npm uninstall hexo-renderer-marked --save npm install hexo-renderer-markdown-it-plus --save
+#   katex:
+#     enable: false
+#     min_css: <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+#     min_js: <script defer src="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+#     auto_render_min_js: <script defer src="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"onload="renderMathInElement(document.body);"></script>
+
+# default:
+#   avatar: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
+#   link: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg
+#   cover: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/cover/76b86c0226ffd.svg
+#   image: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg
+
+# api_host:
+#   ghapi: https://api.github.com
+#   ghraw: https://raw.githubusercontent.com
+#   gist: https://gist.github.com
